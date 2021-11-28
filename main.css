@@ -22,25 +22,38 @@ a{
     text-decoration: none;
 }
 
+p{
+    max-width: 90rem;
+
+}
+
+h1{
+    font-size: calc(1.272rem*1.272*1.272);
+}
+h2 {
+
+    
+}
 .flex-container{
     display: flex;
     flex: 1;
     justify-content: center;
     max-width: calc(1440px - 2rem);
-    padding: 1rem;
+    margin: 1rem 2rem;
 }
 
-header .flex-container{
-    justify-content: space-between;
-}
-
-header{
+header, .hero{
     align-items: center;
     display: flex;
     justify-content: center;
     color: var(--white);
     background-color: var(--dark-blue);
 }
+
+header .flex-container{
+    justify-content: space-between;
+}
+
 .logo{
     font-size: 1.272em;
     font-weight: 900;
@@ -51,4 +64,36 @@ header{
 }
 .navlinks a:hover{
     text-decoration: underline;
+}
+
+
+.hero .flex-container{
+    gap:2rem;
+    justify-content: space-between;
+    padding: 4rem 0;
+}
+
+.text-container{
+   margin: auto 0;
+}
+.max-h1{
+    font-size: calc(1.272rem*1.272*1.272*1.272*1.272);
+}
+.hero p{
+    margin-bottom: 2rem;
+}
+.img-wrapper{
+    flex: 1;
+   
+}
+.hero-img {
+    background-color: grey;
+     width: calc((1440px - 6rem)/2);
+    height: auto;
+}
+
+button{
+    display: inline;
+    flex-grow: 0;
+    padding: .5rem 1rem;
 }
