@@ -39,15 +39,20 @@ h2 {
     flex: 1;
     justify-content: center;
     max-width: calc(1440px - 2rem);
-    margin: 1rem 2rem;
+    margin: 0 auto;
 }
 
+.flex-container.col{
+    flex-direction: column;
+}
 header, .hero{
-    align-items: center;
+    /* align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: center; */
     color: var(--white);
     background-color: var(--dark-blue);
+    padding: 1rem;
+    
 }
 
 header .flex-container{
@@ -96,4 +101,31 @@ button{
     display: inline;
     flex-grow: 0;
     padding: .5rem 1rem;
+}
+
+.features{
+    background-color: var(--white);
+    color: var(--dark-blue);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+.features .flex-container{
+    gap: 2rem;
+    justify-content: space-around;
+}
+.features h2 {
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.feature-item{
+flex :1;
+}
+
+.feature-img{
+    border: var(--blue) solid 4px;
+    border-radius: 16px;
+    height: 120px;
+    margin-bottom: 1rem;
+    width: 120px;
 }
