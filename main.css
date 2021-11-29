@@ -93,7 +93,8 @@ header .flex-container{
 }
 .hero-img {
     background-color: grey;
-     width: calc((1440px - 6rem)/2);
+    width : calc((100vw - 8rem)/2);
+    max-width: calc((1440px - 6rem)/2);
     height: auto;
 }
 
