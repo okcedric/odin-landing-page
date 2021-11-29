@@ -86,8 +86,14 @@ header .flex-container{
     display: flex;
     gap:1rem;
 }
+
+.navlinks a {
+    display: inline-block;
+    padding: .5rem 1rem;
+}
 .navlinks a:hover{
-    text-decoration: underline;
+    background-color: var(--baby-blue);
+    color: var(--dark-blue);
 }
 
 
@@ -190,4 +196,10 @@ flex :1;
 
 button.alt{
     border: var(--white) solid  2px;
+}
+
+footer{
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 4rem;
 }
