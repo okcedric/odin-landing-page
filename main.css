@@ -3,6 +3,7 @@
 :root {
     --dark-blue : #1F2937;
     --blue :#3882F6;
+    --baby-blue : #6CCFF6;
     --grey-blue : #E5E7EB;
     --white : #FFF;
 }
@@ -33,6 +34,24 @@ h1{
 h2 {
     font-size: calc(1.272rem*1.272);
     
+}
+h3 {
+    font-size: 1.272rem;
+}
+button{
+    background-color: var(--blue);
+    border: none;
+    border-radius: 4px;
+    color: var(--white);
+    cursor: pointer;
+    display: inline;
+    padding: .5rem 1rem;
+}
+
+button:hover, button.alt:hover{
+    background-color: var(--baby-blue);
+    color: var(--dark-blue);
+    border-color: var(--baby-blue);
 }
 .flex-container{
     display: flex;
@@ -80,6 +99,7 @@ header .flex-container{
 
 .text-container{
    margin: auto 0;
+   flex: 1;
 }
 .max-h1{
     font-size: calc(1.272rem*1.272*1.272*1.272*1.272);
@@ -98,11 +118,7 @@ header .flex-container{
     height: auto;
 }
 
-button{
-    display: inline;
-    flex-grow: 0;
-    padding: .5rem 1rem;
-}
+
 
 .features{
     background-color: var(--white);
@@ -150,4 +166,28 @@ flex :1;
     font-style: normal;
     font-weight: 400;
     text-align: right;
+}
+.cta {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+.cta .flex-container{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 4rem;
+    margin: 4rem ;
+    border-radius: .5rem;
+}
+
+.button-rack{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+button.alt{
+    border: var(--white) solid  2px;
 }
