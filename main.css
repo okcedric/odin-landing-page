@@ -45,6 +45,7 @@ button{
     color: var(--white);
     cursor: pointer;
     display: inline;
+    font-weight: 900;
     padding: .5rem 1rem;
 }
 
@@ -90,6 +91,7 @@ header .flex-container{
 .navlinks a {
     display: inline-block;
     padding: .5rem 1rem;
+    border-radius: 4px;
 }
 .navlinks a:hover{
     background-color: var(--baby-blue);
